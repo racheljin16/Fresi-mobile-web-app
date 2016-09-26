@@ -1,0 +1,102 @@
+
+body {
+	text-align: center;
+	color: #fff;
+}
+
+#hero {
+	background-image: url(../images/signup-vertical.jpg);
+	background-size: cover;
+	position: absolute;
+	margin: 0;
+	z-index: -1;
+}
+
+#group-signup {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.logo-signup {
+	text-align: center;
+	padding-top: 100px;
+	z-index: 1;
+
+}
+
+#logo-signup {
+	height: 35px;	
+}
+
+#form-signup {
+	width: 100%;
+	padding-top: 30px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 4px 16px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-size: 16px;
+}
+
+.button-submit, .button-transfer, .button-login, .button-fsubmit {
+	padding-top: 8px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button-submit {
+	background-color: #D64C34;
+    border: none;
+    font-size: 17px;
+    margin-top: 16px;
+}
+
+.button-transfer {
+	background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.button-login {
+	background: transparent;
+    border: 2px solid #D64C34;
+    color: #D64C34;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.or {
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.button-fsubmit {
+	background-color: #3b5998;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 600px){
+	
+	#hero {
+		background-image: url(../images/signup.jpg);
+		background-size: cover;
+	}
+
+	#group-signup {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+
+	.button-submit, .button-transfer, .button-login, .button-fsubmit, input[type=text] {
+		width: 400px;
+	}
+}
