@@ -48,15 +48,16 @@ input[type=text] {
     padding-bottom: 10px;
     width: 100%;
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .button-submit {
-	background-color: #D64C34;
-    border: none;
+	background-color: #F2EDEB;
+    border: 1px solid #938C82;
     font-size: 17px;
     margin-top: 16px;
+    color: #D64C34;
 }
 
 .button-transfer {
@@ -66,9 +67,9 @@ input[type=text] {
 }
 
 .button-login {
-	background: transparent;
-    border: 2px solid #D64C34;
-    color: #D64C34;
+	background: #F2EDEB;
+    border: 2px solid #F2EDEB;
+    color: #342C22;
     font-size: 17px;
     margin-top: 40px;
 }
