@@ -1,8 +1,4 @@
-
-body {
-	text-align: center;
-	color: #fff;
-}
+@import 'style';
 
 #hero {
 	background-image: url(../images/signup-vertical.jpg);
@@ -13,13 +9,12 @@ body {
 }
 
 #group-signup {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: $padding-normal;
+	padding-right: $padding-normal;
 }
 
 .logo-signup {
-	text-align: center;
-	padding-top: 100px;
+	padding-top: $padding-big;
 	z-index: 1;
 
 }
@@ -30,7 +25,7 @@ body {
 
 #form-signup {
 	width: 100%;
-	padding-top: 30px;
+	padding-top: $padding-normal;
 }
 
 input[type=text] {
@@ -43,46 +38,45 @@ input[type=text] {
     font-size: 16px;
 }
 
-.button-submit, .button-transfer, .button-login, .button-fsubmit {
-	padding-top: 8px;
-    padding-bottom: 10px;
-    width: 100%;
-    display: inline-block;
-    border-radius: 5px;
-    cursor: pointer;
+.button {
+  	padding-top: $padding-small;
+	padding-bottom: $padding-small;
+	width: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	border: none;
 }
 
 .button-submit {
-	background-color: #F2EDEB;
-    border: 1px solid #938C82;
-    font-size: 17px;
+	@extend .button;
+	background-color: $light-color;
     margin-top: 16px;
-    color: #D64C34;
+    color: $brand-color;
 }
 
 .button-transfer {
+	@extend .button;
 	background: transparent;
-    border: none;
-    font-size: 15px;
+	color: $white-color;
 }
 
 .button-login {
-	background: #F2EDEB;
-    border: 2px solid #F2EDEB;
-    color: #342C22;
-    font-size: 17px;
+	@extend .button;
+	background: $light-color;
     margin-top: 40px;
 }
 
 .or {
-	padding-top: 10px;
-	font-size: 15px;
+	@extend .button;
+	padding-top: $padding-small;
+	color: $white-color;
 }
 
 .button-fsubmit {
+	@extend .button;
 	background-color: #3b5998;
-    border: none;
-    font-size: 17px;
+	color: $white-color;
 }
 
 @media screen and (min-width: 600px){
